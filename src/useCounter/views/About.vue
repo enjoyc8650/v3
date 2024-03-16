@@ -1,10 +1,18 @@
 <template>
-  
+  <h2>About计数: {{ counter }}</h2>
+  <button @click="increment">+</button>
+  <button @click="decrement">-</button>
 </template>
 
 <script>
-export default {
+import useCounter from '../hooks/useCounter';
 
+export default {
+  setup() {
+    return {
+      ...useCounter()
+    }
+  }
 }
 </script>
 
