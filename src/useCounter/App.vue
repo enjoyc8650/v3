@@ -33,6 +33,8 @@ export default {
       useTitle("关于")
     }
 
+    useTitle("首页")
+
     return {
       homeClick,
       aboutClick,
