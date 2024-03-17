@@ -1,6 +1,6 @@
 import { onMounted, ref } from 'vue';
 
-export default function useCounter() {
+export default function useCounter(time, count) {
   const counter = ref(0)
   function increment() {
     counter.value++
@@ -10,8 +10,8 @@ export default function useCounter() {
   }
   onMounted(() => {
     setTimeout(() => {
-      counter.value = 996
-    }, 3000);
+      counter.value = count
+    }, time);
   })
 
   return {

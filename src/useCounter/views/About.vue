@@ -10,12 +10,14 @@ import useCounter from '../hooks/useCounter';
 export default {
   setup() {
     return {
-      ...useCounter()
+      ...useCounter(4000, 200)
     }
   }
 }
 </script>
 
-<style>
-
+<style scpoed>
+  h2 {
+    background-color: #16c902;
+  }
 </style>

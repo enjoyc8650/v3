@@ -10,7 +10,7 @@ import useCounter from '../hooks/useCounter';
 
 export default {
   setup() {
-    const { counter, increment, decrement } = useCounter()
+    const { counter, increment, decrement } = useCounter(2000, 100)
 
     return {
       counter,
@@ -21,4 +21,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+  h2 {
+    background-color: #2fbafa;
+  }
+</style>
